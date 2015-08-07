@@ -4,7 +4,7 @@
 # This script runs munki and installs all available updates until none are available.
 # Meant to be run in a post-image first boot scenario.
 
-until /sbin/ping -c 1 svnetmgt03.purchase.edu; do /bin/sleep 3; done # Make sure we can talk to the server before running.
+until /sbin/ping -c 1 munkiserver.yourorg.com; do /bin/sleep 3; done # Make sure we can talk to the server before running.
 
 updates=1 # Set updates to equal 1 so we check for updates atleast once.
 
